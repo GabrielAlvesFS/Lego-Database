@@ -1,5 +1,16 @@
 #Quais os anos com maiores produções de "Star Wars"
-# Query para o Supabase
+
+SELECT 
+    sets.year, count(themes.name) AS prod_star_wars
+FROM sets
+INNER JOIN 
+    themes ON sets.theme_id = themes.id
+WHERE
+    themes.name = 'Star Wars'
+GROUP BY sets.year
+ORDER BY prod_star_wars desc;
+
+-- Query para o Supabase
 
 SELECT 
     "LEGO_sets".year, count("LEGO_themes".name) AS prod_star_wars
@@ -10,6 +21,5 @@ WHERE
     "LEGO_themes".name = 'Star Wars'
 GROUP BY "LEGO_sets".year
 ORDER BY prod_star_wars desc;
-
 
 

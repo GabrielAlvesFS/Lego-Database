@@ -44,3 +44,11 @@ FROM "LEGO_sets" AS anos
   GROUP by year
   ORDER BY year ASC;
   
+  -- Nomes dos temas
+  -- MYSQL:
+    SELECT id, name FROM LEGO_themes
+  WHERE id IN (525,459,220, 435, 504, 501, 494, 605);
+  
+  -- SUPABASE:
+	SELECT id, name FROM "LEGO_themes"
+  WHERE id IN (525, 459, 220, 435, 504, 501, 494, 605);

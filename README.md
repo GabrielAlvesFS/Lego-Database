@@ -3,15 +3,16 @@
 
 <h2><strong> Andamento do projeto  📈</strong></h2>
 <img src="https://camo.githubusercontent.com/d04296ab32ba0006e2771106306abb9db46a72f32331ea85265b2c5770c80c19/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f646f776e5f636f6c6f723d436f6e636c7569646f266c6162656c3d537461747573267374796c653d666f722d7468652d62616467652675705f6d6573736167653d436f6e636c7569646f2675726c3d68747470732533412532462532466769746875622e636f6d2532467974616c6c6f6272756e6f25324650726f6a65746f46696e616c4d6f64756c6f33">  
-<br><br>
+<br>
 <h2> Sobre o Projeto </h2>
 A partir da Lego Database, uma database open source, filtramos e tratamos os dados das tabelas para obter informações que respondessem as perguntas elaboradas de forma que pudessem ser apresentadas através de gráficos. Desenvolvemos também um site, caso queira ver <a href="https://gabrielalvesfs.github.io/Lego-Database" target="_blank"> Clique Aqui! </a>
 
-<br>
+<br><br>
 <h2> Tecnologias e Ferramentas Utilizadas</h2>
 
 <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=whitee"> <img src="https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"> <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"> <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white">
 
+<br><br>
 <h2>Gráficos e Queries </h2>
 <h3> Query 01 - Quais foram os 10 anos que mais tiveram sets de lego criados? <h3>
 
@@ -70,8 +71,8 @@ SELECT year AS ano,
 FROM LEGO_sets AS anos
 	WHERE year IN (2014, 2015, 2012, 2016, 2013, 2011, 2002, 2010, 2003, 2009)
 	GROUP BY year
-	ORDER BY year ASC;	 
- </pre> 
+	ORDER BY year ASC; </code>		
+</pre> 
 
 
 <h2> Requisitos </h2>

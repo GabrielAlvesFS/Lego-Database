@@ -19,7 +19,6 @@ A partir da Lego Database, uma database open source, filtramos e tratamos os dad
 <img src="https://gabrielalvesfs.github.io/Lego-Database/assets/img/query1.png" width="600px">
 <details>
 <pre>
-
 <code>SELECT sets.year, COUNT(sets.year) AS sets_por_ano FROM sets
      GROUP BY sets.year
 	 ORDER BY sets_por_ano DESC
@@ -40,8 +39,7 @@ A partir da Lego Database, uma database open source, filtramos e tratamos os dad
 	GROUP BY colors.name
 	ORDER BY `Quantidade de peças com essa cor` DESC
 	LIMIT 10; </code>		 
-```
-</pre>,
+</pre>
 </details>
 
 
@@ -54,7 +52,6 @@ A partir da Lego Database, uma database open source, filtramos e tratamos os dad
 GROUP BY sets.theme_id
 ORDER BY tema_repetido DESC
 LIMIT 10; </code>		 
-
  </pre> 
  </details>
  

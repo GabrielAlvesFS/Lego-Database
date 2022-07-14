@@ -18,16 +18,19 @@ A partir da Lego Database, uma database open source, filtramos e tratamos os dad
 
 <img src="https://gabrielalvesfs.github.io/Lego-Database/assets/img/query1.png" width="600px">
 <pre>
+```
 <code>SELECT sets.year, COUNT(sets.year) AS sets_por_ano FROM sets
      GROUP BY sets.year
 	 ORDER BY sets_por_ano DESC
 	 LIMIT 10; </code>		 
- </pre> 
+```
+</pre> 
  
 <h3> Query 02 - Qual é o número de peças de cada cor? </h3>
 <img src="https://gabrielalvesfs.github.io/Lego-Database/assets/img/query2-1.png" width="600px">
-```
+
 <pre>
+```
 <code>SELECT colors.name, SUM(inventory_parts.quantity) 
 	AS `Quantidade de peças com essa cor`
 	FROM inventory_parts
@@ -36,26 +39,30 @@ A partir da Lego Database, uma database open source, filtramos e tratamos os dad
 	GROUP BY colors.name
 	ORDER BY `Quantidade de peças com essa cor` DESC
 	LIMIT 10; </code>		 
- </pre>
- ```
+```
+</pre>
+
 
 <h3> Query 03 - Quais são os 10 temas mais populares (mais feitos) de lego? <h3>
 
 <img src="https://gabrielalvesfs.github.io/Lego-Database/assets/img/query3.png" width="600px">
-```
+
 <pre>
+```
 <code>SELECT sets.theme_id, COUNT(sets.theme_id) as tema_repetido FROM sets
 GROUP BY sets.theme_id
 ORDER BY tema_repetido DESC
 LIMIT 10; </code>		 
- </pre> 
  ```
+ </pre> 
+ 
 
 <h3> Query 04 - Quais eram os temas mais usadas nos 10 anos que mais tiveram sets de lego criados? <h3>
 
 <img src="https://gabrielalvesfs.github.io/Lego-Database/assets/img/tema.png" width="600px">
-```
+
 <pre>
+```
 <code>
 SELECT year AS ano,
 (
@@ -77,8 +84,9 @@ FROM LEGO_sets AS anos
 	WHERE year IN (2014, 2015, 2012, 2016, 2013, 2011, 2002, 2010, 2003, 2009)
 	GROUP BY year
 	ORDER BY year ASC; </code>		
-</pre> 
 ```
+</pre> 
+
 
 <h2> Requisitos </h2>
 Neste projeto você e sua squad deverão montar um dashboard com base no conjunto de dados escolhidos por vocês, a fim de realizar uma apresentação com a exploração dos dados. 
